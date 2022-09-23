@@ -7,12 +7,12 @@ import Home from './components/pages/Home';
 function App() {
   return (
     <>
-      {/* <Navbar/> */}
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/products' element={<Navbar/>}/>
-        <Route path='/services' element={<Navbar/>}/>
-        <Route path='/sign-up' element={<Navbar/>}/>
+        <Route path='/products' element={<Home/>}/>
+        <Route path='/services' element={<Home/>}/>
+        <Route path='/sign-up' element={<Home/>}/>
       </Routes>
     </>
   );
